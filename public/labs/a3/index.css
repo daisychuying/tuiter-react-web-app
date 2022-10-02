@@ -189,4 +189,300 @@ p#id-selector-2 {
     float: left;
 }
 
+.rotate-paragraph {
+    width: 250px;
+    height: 250px;
+    transform: rotate(90deg);
+}
+.rotate-list {
+    transform: rotate(12deg);
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+.rotate-list-counter {
+    transform: rotate(-10deg);
+    width: 100px;
+    background: dodgerblue;
+    color: white;
+}
+.rotate-list-items li {
+    width: 100px;
+    text-align: right;
+}
+.rotate-list-items li:nth-child(1) {
+    transform: rotate(-10deg);
+    background-color: yellow;
+}
+.rotate-list-items li:nth-child(2) {
+    transform: rotate(2deg);
+    background-color: blue;
+    color: white;
+}
+.rotate-list-items li:nth-child(3) {
+    transform: rotate(10deg);
+    background-color: red;
+}
+.rotate-image {
+    transform: rotate(-10deg);
+}
+.rotate-table {
+    position: relative;
+    left: 50px;
+    transform: rotate(15deg);}
+.rotate-table tr:nth-child(1) {
+    background-color: black;
+    color: white;}
+.rotate-table tr:nth-child(n+2) {
+    background-color: yellow;}
+.rotate-table tr:nth-child(n+5) {
+    background-color: blue;
+    color: white;}
+.rotate-table tr:nth-child(n+8) {
+    background-color: red;}
+.rotate-table tr:nth-child(n+11) {
+    background-color: green;
+    color: white;
+}
+.gradients-linear {
+    background: linear-gradient(yellow, red);
+    width: 200px;
+    height: 200px;
+}
+.gradients-linear-test {
+    background: linear-gradient(lightskyblue, blue);
+    width: 200px;
+    height: 200px;
+}
+.gradients-radial {
+    background: radial-gradient(yellow, green);
+    width: 200px;
+    height: 200px;
+}
+.gradients-positioned {
+    background:
+            radial-gradient(
+                    at top left, blue, red);
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+.animation-keyframes {
+    position: relative;
+    top: 0px;
+    animation-duration: 7s;
+    animation-name: slidein;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+}
+
+@keyframes slidein {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 100%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: black;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 300%;
+        margin-left: 25%;
+        width: 400px;
+        height: 400px;
+        background-color: blue;
+        color: white;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 100%;
+        margin-left: 0%;
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        color: white;
+    }
+}
+.animation-keyframes-test {
+    position: relative;
+    top: 0px;
+    animation-duration: 5s;
+    animation-name: slidein-test;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: purple;
+}
+@keyframes slidein-test {
+    from {
+        position: relative;
+        top: 0px;
+        font-size: 300%;
+        margin-left: 300%;
+        width: 100px;
+        height: 100px;
+        background-color: purple;
+        color: green;
+    }
+    50% {
+        position: relative;
+        top: -200px;
+        font-size: 200%;
+        margin-left: 25%;
+        width: 200px;
+        height: 200px;
+        background-color: yellow;
+        color: dodgerblue;
+    }
+
+    to {
+        position: relative;
+        top: 0px;
+        font-size: 300%;
+        margin-left: 0%;
+        width: 300px;
+        height: 300px;
+        background-color: green;
+        color: white;
+    }
+}
+
+.flex-container {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+}
+.flex-box {
+    border: 5px gray solid;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-box-1 {
+    background-color: yellow;
+}
+.flex-box-2 {
+    background-color: blue;
+    color: white;
+}
+.flex-box-3 {
+    background-color: red;
+    color: white;
+}
+.flex-container-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+}
+.flex-container-end {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
+
+.flex-container-space-around {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-around;
+}
+.flex-container-space-between {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+.flex-container-align-flex-start {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.flex-container-align-center {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex-container-align-flex-end {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+.flex-container-stretch {
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    display: flex;
+    /*justify-content: space-evenly;*/
+    /*align-items: center;*/
+}
+.flex-container-stretch > .flex-box {
+    flex-basis: 100%;
+}
+@media (min-width: 0px)
+and (max-width: 600px) {
+    body {
+        background-color: orange;
+    }
+    .media-query-h1 {
+        background-color: blue;
+        color: white;
+    }
+    .media-query-p {
+        border-bottom: solid;
+    }
+}
+@media (min-width: 600px)
+and (max-width: 1200px) {
+    body {
+        background-color: black;
+        color: yellow;
+    }
+    .media-query-h1 {
+        background-color: green;
+        color: black;
+    }
+    .media-query-p {
+        font-family: "American Typewriter";
+    }
+}
+@media (min-width: 1200px)
+and (max-width: 1800px) {
+    body {
+        background-color: mediumpurple;
+        color: gold;
+    }
+    .media-query-h1 {
+        background-color: grey;
+        color: darkgreen;
+    }
+}
+
+
+
+
+
 
