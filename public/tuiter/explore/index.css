@@ -1,6 +1,59 @@
 .wd-search-tuiter {
     bottom: 0px;
+}
 
+body{
+    background-color: black;
+    color: white;
+}
+
+.wd-background-black {
+    background-color: black;
+}
+.wd-text-white {
+    color: white;
+}
+.wd-selected-bolder{
+    font-weight: bolder;
+}
+.active.override-active{
+    font-weight: bolder;
+    background-color: black;
+    border-color: black;
+}
+.wd-background-darkgray{
+    background-color: rgb(47, 51, 54);
+}
+
+.wd-text-gray{
+    color: rgb(110, 118, 125);
+}
+.wd-border-gray{
+    border-color: rgb(110, 118, 125);
+}
+.wd-border-side-darkgray {
+    border-left: solid 1px rgb(47, 51, 54);
+    border-right: solid 1px rgb(47, 51, 54);
+}
+
+.wd-border-top-darkgray{
+    border-top: solid 1px rgb(47, 51, 54);
+}
+.wd-border-darkgray {
+    border-color: rgb(47, 51, 54);
+}
+.wd-nav-selected{
+    background-color: black;
+    font-weight: bolder;
+    border-color: black;
+    border-bottom: solid 4px rgb(29,161,242);
+    color: white;
+}
+.wd-bottom-10 {
+    bottom: 10%;
+}
+.wd-left-16 {
+    left: 16px;
 }
 
 
