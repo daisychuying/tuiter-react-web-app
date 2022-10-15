@@ -8,7 +8,7 @@ const TodoList = () => {
         todos.map(todo => {
             return(TodoItem(todo));
         }).join('')
-    } n
+    }
        </ul>
    `);
 }
