@@ -3,7 +3,7 @@ import post from "./posts.js";
 
 const PostItem = (post) => {
     return(`
-    <li class="list-group-item">
+    <li class="list-group-item wd-bg-black">
         <div class="row">
             <div class="col col-2">
                 <div><img src=${post.profileImg} class="float-start rounded-circle" height="60px"></div>

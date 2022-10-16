@@ -1,19 +1,24 @@
-body {
-    font-family: "Arial";
-    background: black;
-    color: white;
+/*body {*/
+/*    font-family: "Arial";*/
+/*    background: black;*/
+/*    color: white;*/
+/*}*/
+
+.wd-bg-black {
+    background: #060606;
 }
-.wd-post-dot {
-    float: right;
-    margin-right: 16px;
-}
-.wd-body {
-    position: absolute;
-    left: 16px;
-    right: 16px;
-}
-.wd-post-dot {
-    float: right;
-    margin-right: 16px;
-}
+
+/*.wd-post-dot {*/
+/*    float: right;*/
+/*    margin-right: 16px;*/
+/*}*/
+/*.wd-body {*/
+/*    position: absolute;*/
+/*    left: 16px;*/
+/*    right: 16px;*/
+/*}*/
+/*.wd-post-dot {*/
+/*    float: right;*/
+/*    margin-right: 16px;*/
+/*}*/
 

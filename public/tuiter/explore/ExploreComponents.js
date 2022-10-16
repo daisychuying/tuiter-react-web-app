@@ -30,10 +30,9 @@ const ExploreComponent = () => {
                     <a class="wd-background-black wd-text-gray nav-link fs-6 d-sm-none d-md-block" href="#">Entertainment</a>
                 </li>
             </ul>
-            <div class="pb-0 wd-border-top-darkgray position-relative">
+            <div class="pb-0 wd-border-top-darkgray position-relative mb-2">
                 <img src="../../images/starship.png" width="100%" class="mt-0 wd-border-top-darkgray">
-                <div class="text-white position-absolute wd-bottom-10 wd-left-16">Space · Spaceship</div>
-                <h3 class="text-white position-absolute bottom-0 wd-left-16" >SpaceX's Starship <i class="fa-solid fa-rocket"></i></h3>
+                <h3 class="text-white position-absolute bottom-0 wd-left-16 ps-2" > SpaceX's Starship <i class="fa-solid fa-rocket"></i></h3>
             </div>
             ${PostSummaryList()}
     
