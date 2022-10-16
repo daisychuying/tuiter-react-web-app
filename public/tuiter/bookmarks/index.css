@@ -1,0 +1,124 @@
+.wd-post-title {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+.wd-bookmark-handle {
+    color: lightgray;
+    font-size: 13px;
+    font-weight: normal;
+    margin-left: 16px;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+
+.wd-body-border {
+    border: solid rgb(47, 51, 54) 1px;
+}
+
+.wd-bookmark-body{
+    margin-top: 12px;
+    margin-left: 76px;
+    margin-right: 16px;
+}
+
+.wd-avatar-margin {
+    float: left;
+    margin-left: 16px;
+    margin-top: 12px;
+}
+
+.wd-post-avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+
+}
+
+.wd-post-name {
+    color: white;
+    font-size: 15px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.wd-post-handle {
+    color: lightgray;
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+.wd-post-content {
+    margin-top: 5px;
+    color: white;
+    font-size: 15px;
+    max-width: 506px;
+    margin-bottom: 0px;
+}
+.wd-bookmark-border {
+    margin-top: 12px;
+    border-radius: 10px;
+    border: solid rgb(47, 51, 54) 1px;
+    max-width: 506px;
+}
+.wd-bookmark-img {
+    width: 504px;
+    height: 264px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.wd-bookmark-content {
+    margin-top: 12px;
+    margin-left: 12px;
+    font-size: 15px;
+}
+.wd-bookmark-title {
+    color: white;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    font-weight: bold;
+    /*padding: 12px;*/
+}
+
+.wd-bookmark-p {
+    color: lightgray;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    /*padding: 12px;*/
+}
+
+.wd-bookmark-sign {
+    color: rgb(110, 118, 125);
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+
+.wd-sign {
+    margin-right: 12px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.wd-bookmark-sign li{
+    list-style-type: none;
+    display: inline-block;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 12px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-right: 60px;
+    font-size: 15px;
+    color: lightgray;
+
+}
+
+.wd-sign-selected {
+    color: red;
+}
