@@ -1,0 +1,27 @@
+[
+  {"_id": 123,
+    "userName": "Chuying Huang",
+    "handle": "chuyinghuang",
+    "time": "2h",
+    "comment": "Future in NanoEngineering",
+    "title": "Combining NanoParticles using DNA Double Helix | Science",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "profileImg": "profilepic.png",
+    "postImg": "profilebanner.PNG",
+    "comments": "100",
+    "likes": "89",
+    "tweets": "3.5K"
+  },
+  {"_id": 234,
+    "userName": "Elon Musk",
+    "handle": "elonmusk",
+    "time": "2h",
+    "comment": "Amazing show about mission",
+    "title": "Countdown: Inspiration Mission to Space",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "profileImg": "tesla-logo.png",
+    "postImg": "tesla-mission.jpeg",
+    "comments": 569,
+    "likes": 965,
+    "tweets": "7K"
+  }]
