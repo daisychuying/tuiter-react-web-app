@@ -7,8 +7,8 @@ const Todos = () => {
     const [todo, setTodo] = useState({do: ''});
     const dispatch = useDispatch();
 
-    const toggleTodoDone = (index) => {
-        dispatch(todoDoneToggle(index))
+    const toggleTodoDone = (id) => {
+        dispatch(todoDoneToggle(id))
     }
     const deleteTodoClickHandler = (index) => {
         dispatch(deleteTodo(index))
@@ -39,16 +39,16 @@ const Todos = () => {
                         value={todo.do}
                         className="form-control w-75"/>
                     {
-                        todos.map( (todo, index) =>
+                        todos.map( (todo, ndx) =>
                             <li key={todo._id}
                                 className="list-group-item">
-                                <button onClick={() => deleteTodoClickHandler(index)}
+                                <button onClick={() => deleteTodoClickHandler(ndx)}
                                         className="btn btn-danger float-end ms-2">
                                     Delete
                                 </button>
                                 <input type="checkbox"
                                        checked={todo.done}
-                                       onChange={() => toggleTodoDone(index)}
+                                       onChange={() => toggleTodoDone(todo._id)}
                                        className="me-2"/>
                                 {todo.do}
                             </li>
@@ -57,6 +57,7 @@ const Todos = () => {
 
                 </li>
             </ul>
+
         </>
     );
 };
