@@ -1,24 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit";
-
-const initialProfile = {
-        firstName: 'Chuying',
-        lastName: 'Huang',
-        handle: '@daisy',
-        profilePicture: 'profilepic.png',
-        bannerPicture: 'profilebanner.PNG',
-        bio: 'Student, Software Engineer, Space, and renewable enthusiast. Retuits and likes are not endorsements.',
-        website: 'youtube.com/webdevtv',
-        location: 'San Jose, CA',
-        dateOfBirth: '12/29/1996',
-        dateJoined: '4/2009',
-        followingCount: 340,
-        followersCount: 223
-    }
-
+import initialProfile from "./profile.json";
 
 const profileSlice = createSlice({
     name: 'profile',
     initialState: initialProfile,
+    reducers: {
+        updateProfile(state, action) {
+            state.name = action.payload.name.name;
+            state.bio = action.payload.bio.bio;
+            state.dateOfBirth = action.payload.dateOfBirth.dateOfBirth;
+            state.location = action.payload.location.location;
+            state.website = action.payload.website.website;
+        }
+    }
 });
 
+export const {updateProfile} = profileSlice.actions;
 export default profileSlice.reducer
