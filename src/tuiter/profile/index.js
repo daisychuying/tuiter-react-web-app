@@ -7,7 +7,7 @@ const ProfileComponent = () => {
     let navigate = useNavigate();
     const routeChange = () => {
         // let path = `edit-profile`;
-        navigate('/tuiter/edit-profile');
+        navigate('/tuiter/edit-mprofile');
     }
 
     return (
