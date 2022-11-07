@@ -27,7 +27,7 @@ const NavigationSidebar = (active) => {
         ${active === 'lists' ? 'active' : ''}">
         <i class="pe-3 fa fa-solid fa-list"></i> Lists</a>
         
-        <a href="../profile.html" class="pt-3 pb-3 list-group-item list-group-item-action fs-6
+        <a href="../profile.txt" class="pt-3 pb-3 list-group-item list-group-item-action fs-6
         ${active === 'profile' ? 'active' : ''}">
         <i class="pe-3 fa fa-solid fa-user"></i> Profile</a>
         
