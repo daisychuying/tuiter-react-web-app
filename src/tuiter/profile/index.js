@@ -43,6 +43,13 @@ const ProfileComponent = () => {
                     <i className="bi bi-balloon"></i><span> {profile.dateOfBirth} </span>
                     <i className="bi bi-calendar"></i><span> Joined {profile.dateJoined}</span>
                 </div>
+                <br/>
+                <div className="text-secondary">
+                    <span className="fw-bold"> {profile.followingCount} </span>
+                    <span> Following </span>
+                    <span className="fw-bold"> {profile.followersCount} </span>
+                    <span> Followers </span>
+                </div>
             </div>
 
         </>
