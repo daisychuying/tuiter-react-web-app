@@ -6,8 +6,8 @@ import ProfileComponent from "./profile";
 import EditProfileComponent from "./edit-profile";
 import {Routes, Route} from "react-router";
 import whoReducer from "./reducers/who-reducer";
-import tuitsReducer from "./tuits/tuits-reducer";
-import profileReducer from "./profile/profile-reducer";
+import tuitsReducer from "./reducers/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from "react-redux";
 
