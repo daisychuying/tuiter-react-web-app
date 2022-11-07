@@ -23,7 +23,7 @@ const EditProfile = () => {
             dateOfBirth: dateOfBirth,
         }
         dispatch(updateProfile(newProfile));
-        navigate('/tuiter/mprofile');
+        navigate('/tuiter/profile');
     }
 
 
@@ -31,7 +31,7 @@ const EditProfile = () => {
         <>
             <div className="position-relative">
                 <div className="row">
-                    <a className="col col-2 mt-2" href="/tuiter/mprofile"><i className="bi bi-x-lg fs-4 fw-bold"></i></a>
+                    <a className="col col-2 mt-2" href="/tuiter/profile"><i className="bi bi-x-lg fs-4 fw-bold"></i></a>
                     <div className="col col-8 mt-2"><span className="fs-4 fw-bold">Edit Profile</span></div>
                     <button className="col col-2 btn btn-dark float-end rounded-pill"
                             onClick={() => profileSaveHandler()}>
