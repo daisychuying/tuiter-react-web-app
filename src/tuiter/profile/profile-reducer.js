@@ -6,11 +6,11 @@ const profileSlice = createSlice({
     initialState: initialProfile,
     reducers: {
         updateProfile(state, action) {
-            state.name = action.payload.name.name;
-            state.bio = action.payload.bio.bio;
-            state.dateOfBirth = action.payload.dateOfBirth.dateOfBirth;
-            state.location = action.payload.location.location;
-            state.website = action.payload.website.website;
+            state.name = action.payload.name;
+            state.bio = action.payload.bio;
+            state.dateOfBirth = action.payload.dateOfBirth;
+            state.location = action.payload.location;
+            state.website = action.payload.website;
         }
     }
 });

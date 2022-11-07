@@ -5,21 +5,22 @@ import { useNavigate } from "react-router-dom";
 
 const EditProfile = () => {
     const profile = useSelector( state => state.profile );
-    const [name, setName] = useState({name: profile.name});
-    const [bio, setBio] = useState({bio: profile.bio});
-    const [location, setLocation] = useState({locaton: profile.location});
-    const [website, setWebsite] = useState({website: profile.website});
-    const [dateOfBirth, setDOB] = useState({dateOfBirth: profile.dateOfBirth});
+    const [name, setName] = useState(profile.name);
+    const [bio, setBio] = useState(profile.bio);
+    const [location, setLocation] = useState(profile.location);
+    const [website, setWebsite] = useState(profile.website);
+    const [dateOfBirth, setDOB] = useState(profile.dateOfBirth);
     const dispatch = useDispatch();
     let navigate = useNavigate();
 
-    const profileSaveHandler = (n, b, l, w, dob) => {
+    const profileSaveHandler = () => {
         const newProfile = {
-            name: n,
-            bio: b,
-            location: l,
-            website: w,
-            dateOfBirth: dob,
+            ...profile,
+            name: name,
+            bio: bio,
+            location: location,
+            website: website,
+            dateOfBirth: dateOfBirth,
         }
         dispatch(updateProfile(newProfile));
         navigate('/tuiter/profile');
@@ -33,7 +34,7 @@ const EditProfile = () => {
                     <a className="col col-2 mt-2" href="/tuiter/profile"><i className="bi bi-x-lg fs-4 fw-bold"></i></a>
                     <div className="col col-8 mt-2"><span className="fs-4 fw-bold">Edit Profile</span></div>
                     <button className="col col-2 btn btn-dark float-end rounded-pill"
-                            onClick={() => profileSaveHandler(name, bio, location, website, dateOfBirth)}>
+                            onClick={() => profileSaveHandler()}>
                         Save</button>
                 </div>
                 <br/>
@@ -54,24 +55,24 @@ const EditProfile = () => {
             <div className="mt-3 form-group">
                 <label htmlFor="inputName">Name</label><br/>
                 <input type="text" id="inputName" className="form-control"
-                        onChange={(e)=>{setName({name: e.target.value})}}
-                        value={name.name}/><br/>
+                        onChange={(e)=> setName( e.target.value)}
+                        value={name}/><br/>
                 <label htmlFor="inputBio">Bio</label><br/>
                 <textarea type="text" className="form-control"
-                          onChange={(e)=>{setBio({bio: e.target.value})}}
-                          value={bio.bio} id="inputBio"/><br/>
+                          onChange={(e)=> setBio( e.target.value)}
+                          value={bio} id="inputBio"/><br/>
                 <label htmlFor="inputLocation">Location</label><br/>
                 <input type="text" id="inputLocation" className="form-control"
-                       onChange={(e)=>{setLocation({location: e.target.value})}}
-                       value={location.locaton}/><br/>
+                       onChange={(e)=> setLocation( e.target.value)}
+                       value={location}/><br/>
                 <label htmlFor="inputWebsoye">Website</label><br/>
                 <input type="text" id="inputWebsite" className="form-control"
-                       onChange={(e)=>{setWebsite({website: e.target.value})}}
-                       value={website.website}/><br/>
+                       onChange={(e)=> setWebsite( e.target.value)}
+                       value={website}/><br/>
                 <label htmlFor="inputDOB">Date of Birth</label><br/>
                 <input type="date" id="inputDOB" className="form-control"
-                       onChange={(e)=>{setDOB({dateOfBirth: e.target.value})}}
-                       value={dateOfBirth.dateOfBirth}/>
+                       onChange={(e)=> setDOB( e.target.value)}
+                       value={dateOfBirth}/>
             </div>
         </>
     )

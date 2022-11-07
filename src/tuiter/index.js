@@ -16,7 +16,8 @@ const store = configureStore(
             {who: whoReducer,
             tuits: tuitsReducer,
             profile: profileReducer,
-            }});
+            }
+    });
 
 
 function Tuiter() {
