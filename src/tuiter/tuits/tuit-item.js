@@ -1,6 +1,8 @@
 import React from "react";
-import {deleteTuit} from "../reducers/tuits-reducer";
 import {useDispatch} from "react-redux";
+import {deleteTuitThunk} from "../../services/tuits-thunks";
+import TuitStats from "./tuit-stats";
+
 const TuitItem = (
     {
         tuit = {
@@ -13,6 +15,7 @@ const TuitItem = (
             "replies": 123,
             "retuits": 432,
             "likes": 2345,
+            "dislikes": 123,
             "handle": "@spacex",
             "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars"
 
@@ -21,7 +24,7 @@ const TuitItem = (
 ) => {
     const dispatch = useDispatch();
     const deleteTuitHandler = (id) => {
-        dispatch(deleteTuit(id));
+        dispatch(deleteTuitThunk(id));
     }
     return(
         <li className="list-group-item wd-bg-black">
@@ -35,20 +38,7 @@ const TuitItem = (
                         <i className="bi bi-x-lg float-end" onClick={() => deleteTuitHandler(tuit._id)}></i>
                     </div>
                     <div className="my-1">{tuit.tuit}</div>
-                    <div className="row  my-2">
-                        <div className="col-3 mx-auto text-secondary">
-                            <a href="index.js" className="px-1"><i className="bi bi-chat-left-heart text-secondary"></i></a> <span>{tuit.replies}</span>
-                        </div>
-                        <div className="col-3 mx-auto text-secondary">
-                            <a href="index.js" className="px-1"><i className="bi bi-repeat text-secondary"></i></a> <span>{tuit.retuits}</span>
-                        </div>
-                        <div className="col-3 mx-auto text-secondary">
-                            <a href="index.js" className="px-1"><i className={`bi bi-suit-heart-fill text-secondary ${tuit.liked && "text-danger"}`}></i></a> <span>{tuit.likes}</span>
-                        </div>
-                        <div className="col-3 mx-auto text-secondary">
-                            <a href="index.js" className="px-1"><i className="bi bi-box-arrow-up text-secondary"></i></a>
-                        </div>
-                    </div>
+                    <TuitStats tuit={tuit}/>
                 </div>
             </div>
         </li>
